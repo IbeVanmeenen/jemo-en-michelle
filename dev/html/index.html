@@ -11,8 +11,6 @@
 
     <meta name="application-name" content="Jemo en Michelle gaan trouwen">
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBts0LfuA39iQzdU6U6EgcIVapzkpsNI0s"></script>
-
     <title>Jemo en Michelle gaan trouwen</title>
 </head>
 <body>
@@ -36,26 +34,22 @@
         <section class="expl-block">
             <figure class="expl-block__col">
               <object id="gmap-container" class="expl-block__col__maps"></object>
-                <!-- <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.be/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=KSA+'t+Vlinderke,+Ellestraat+25,+8550+Zwevegem&amp;aq=&amp;sll=50.809135,3.342204&amp;sspn=0.003953,0.009087&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=KSA+'t+Vlinderke,+Ellestraat+25,+Zwevegem+8550+Zwevegem,+West-Vlaanderen,+Vlaams+Gewest&amp;ll=50.81548,3.334007&amp;spn=0.01898,0.008583&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe> -->
             </figure>
             <div class="expl-block__col">
                 <header>
                     <h2 class="expl-block__title">
-                        Aargh, <span class="line-word line-word--blue">wat</span> is de bedoeling?
+                        Sacre bleu, où est le mone?
                     </h2>
                 </header>
                 <ol class="steps-list">
                     <li class="steps-list__item">
-                        <img src="./assets/img/icons/pc.png" class="steps-list__item__fig">
-                        <p class="steps-list__item__txt">Voer jullie eerste code in op deze website <br> (scroll naar beneden)</p>
+                        <p class="steps-list__item__txt">Zoek alle vermiste fishies en vraag naar hun code. <br> <small>(Houd deze codes bij!)</small></p>
                     </li>
                     <li class="steps-list__item">
-                        <img src="./assets/img/icons/find.png" class="steps-list__item__fig">
-                        <p class="steps-list__item__txt">Met de nieuwe tip zoeken jullie een nieuwe code</p>
+                        <p class="steps-list__item__txt">Eenmaal alle fishies gevonden, geef de vijf codes via de magische steen door... <br> <small>(zoek de juiste volgorde...)</small></p>
                     </li>
                     <li class="steps-list__item">
-                        <img src="./assets/img/icons/map.png" class="steps-list__item__fig">
-                        <p class="steps-list__item__txt">Herhaal dit tot jullie alle stukjes van de kaart hebben verzameld!</p>
+                        <p class="steps-list__item__txt">Ga verder met de boodschap gekregen door de magische steen.</p>
                     </li>
                 </ol>
             </div>
@@ -63,7 +57,7 @@
 
         <section class="code-block">
             <figure class="stone" id="stone">
-                <img src="./assets/img/stone/stone--no-head.jpg" class="stone__bg">
+                <img src="./assets/img/stone/stone--no-head.png" class="stone__bg">
                 <figure class="stone__head">
                     <img src="./assets/img/stone/head.png" class="stone__head__head">
                     <img src="./assets/img/stone/eyes--correct.png" class="stone__eye stone__eye--correct">
@@ -72,18 +66,14 @@
 
                 <figcaption class="stone__content">
                     <div class="stone__code">
-                        <button type="button" class="js-code-btn stone__code__btn" data-code="A">A</button>
-                        <button type="button" class="js-code-btn stone__code__btn" data-code="B">B</button>
-                        <button type="button" class="js-code-btn stone__code__btn" data-code="C">C</button>
-                        <button type="button" class="js-code-btn stone__code__btn" data-code="D">D</button>
-                        <button type="button" class="js-code-btn stone__code__btn" data-code="I">I</button>
-                        <button type="button" class="js-code-btn stone__code__btn" data-code="J">J</button>
-                        <button type="button" class="js-code-btn stone__code__btn" data-code="L">L</button>
-                        <button type="button" class="js-code-btn stone__code__btn" data-code="N">N</button>
-                        <button type="button" class="js-code-btn stone__code__btn" data-code="P">P</button>
-
                         <button type="button" class="js-code-btn stone__code__btn" data-code="0">0</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="1">1</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="2">2</button>
                         <button type="button" class="js-code-btn stone__code__btn" data-code="3">3</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="4">4</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="5">5</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="6">6</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="7">7</button>
                         <button type="button" class="js-code-btn stone__code__btn" data-code="8">8</button>
                         <button type="button" class="js-code-btn stone__code__btn" data-code="9">9</button>
                     </div>
@@ -98,6 +88,7 @@
     <audio src="./assets/sound/fail.mp3" preload="auto" id="sound--fail" class="audio-file"></audio>
     <audio src="./assets/sound/success.mp3" preload="auto" id="sound--success" class="audio-file"></audio>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBts0LfuA39iQzdU6U6EgcIVapzkpsNI0s"></script>
     <script src="./assets/js/vendors.min.js"></script>
     <script src="./assets/js/app.min.js"></script>
 </body>

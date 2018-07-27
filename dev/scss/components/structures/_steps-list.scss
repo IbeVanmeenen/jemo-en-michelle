@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
 
-  list-style: none;
+  list-style: decimal;
 
   @include fluid-type(25rem, 80rem, 1.4rem, 1.8rem);
   line-height: 1.2;
@@ -17,10 +17,7 @@
 /* Item
    ========================================================================== */
 .steps-list__item {
-  display: block;
   margin: 0 0 2rem 0;
-
-  overflow: hidden;
 }
 
 .steps-list__item__fig {

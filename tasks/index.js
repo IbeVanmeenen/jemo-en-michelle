@@ -1,18 +1,14 @@
+import audio from './audio';
+import clean from './clean';
+import html from './html';
+import images from './images';
+import javascript from './javascript';
+import server from './server';
+import styles from './styles';
+import watch from './watch';
 import gulp from 'gulp';
 
-import clean from './clean';
-import styles from './styles';
-import javascript from './javascript';
-import images from './images';
-import video from './video';
-import html from './html';
-
-import server from './server';
-import watch from './watch';
-
-
-export const dev = gulp.series(clean, gulp.parallel(styles, javascript, images, video), html, server, watch);
-export const build = gulp.series(clean, gulp.parallel(styles, javascript, images, video), html);
-
+export const dev = gulp.series(clean, gulp.parallel(styles, javascript, images, audio), html, server, watch);
+export const build = gulp.series(clean, gulp.parallel(styles, javascript, images, audio), html);
 
 export default dev;

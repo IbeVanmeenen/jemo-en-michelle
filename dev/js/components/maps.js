@@ -1,64 +1,106 @@
 // Map styles
 const mapStyle = [
-  { featureType: 'administrative', elementType: 'all', stylers: [{ visibility: 'off' }] },
   {
-    featureType: 'landscape',
+    featureType: 'all',
     elementType: 'all',
-    stylers: [{ visibility: 'simplified' }, { hue: '#0066ff' }, { saturation: 74 }, { lightness: 100 }]
+    stylers: [
+      {
+        hue: '#008eff'
+      }
+    ]
   },
-  { featureType: 'poi', elementType: 'all', stylers: [{ visibility: 'simplified' }] },
-  { featureType: 'road', elementType: 'all', stylers: [{ visibility: 'simplified' }] },
   {
-    featureType: 'road.highway',
+    featureType: 'poi',
     elementType: 'all',
-    stylers: [{ visibility: 'off' }, { weight: 0.6 }, { saturation: -85 }, { lightness: 61 }]
+    stylers: [
+      {
+        visibility: 'off'
+      }
+    ]
   },
-  { featureType: 'road.highway', elementType: 'geometry', stylers: [{ visibility: 'on' }] },
-  { featureType: 'road.arterial', elementType: 'all', stylers: [{ visibility: 'off' }] },
-  { featureType: 'road.local', elementType: 'all', stylers: [{ visibility: 'on' }] },
-  { featureType: 'transit', elementType: 'all', stylers: [{ visibility: 'simplified' }] },
+  {
+    featureType: 'road',
+    elementType: 'all',
+    stylers: [
+      {
+        saturation: '0'
+      },
+      {
+        lightness: '0'
+      }
+    ]
+  },
+  {
+    featureType: 'transit',
+    elementType: 'all',
+    stylers: [
+      {
+        visibility: 'off'
+      }
+    ]
+  },
   {
     featureType: 'water',
     elementType: 'all',
-    stylers: [{ visibility: 'simplified' }, { color: '#5f94ff' }, { lightness: 26 }, { gamma: 5.86 }]
+    stylers: [
+      {
+        visibility: 'simplified'
+      },
+      {
+        saturation: '-60'
+      },
+      {
+        lightness: '-20'
+      }
+    ]
   }
 ];
-let customMarkerImg = '/assets/img/gmaps/marker.svg';
+
+const positions = [
+  {
+    lat: 50.819,
+    lng: 3.303906
+  },
+  {
+    lat: 50.771023,
+    lng: 3.362988
+  },
+  {
+    lat: 50.7606149,
+    lng: 3.4932187999999997
+  },
+  {
+    lat: 50.8136015,
+    lng: 3.3528179
+  },
+  {
+    lat: 50.8445391,
+    lng: 3.3149859999999998
+  }
+];
 
 // Setup
 const setup = gmapContainer => {
-  // Define position
-  const lat = +gmapContainer.dataset.lat;
-  const lng = +gmapContainer.dataset.lng;
-  const zoom = +gmapContainer.dataset.zoom;
-
-  // Setup map
   const map = new google.maps.Map(gmapContainer, {
-    zoom: zoom,
-    center: {
-      lat: lat,
-      lng: lng
-    },
+    zoom: 10,
     styles: mapStyle
   });
 
-  // Custom Marker
-  // const customMarker = {
-  //   url: customMarkerImg,
-  //   size: new google.maps.Size(70, 84),
-  //   scaledSize: new google.maps.Size(70, 84),
-  //   origin: new google.maps.Point(0, 0),
-  //   anchor: new google.maps.Point(17.5, 42)
-  // };
+  const bounds = new google.maps.LatLngBounds();
 
-  // const marker = new google.maps.Marker({
-  //   position: {
-  //     lat: lat,
-  //     lng: lng
-  //   },
-  //   map: map,
-  //   icon: customMarker
-  // });
+  for (const position of positions) {
+    const marker = new google.maps.Marker({
+      position: {
+        lat: position.lat,
+        lng: position.lng
+      },
+      map: map
+    });
+
+    bounds.extend(marker.position);
+  }
+
+  map.fitBounds(bounds);
 };
 
 const maps = _ => {
