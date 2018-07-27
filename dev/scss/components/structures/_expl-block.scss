@@ -15,14 +15,10 @@
 /* Column
    ========================================================================== */
 .expl-block__col {
-  // display: flex;
-  // flex-flow: column;
   height: 100vh;
-  // justify-content: center;
-  // align-items: center;
 
   margin: 0;
-  padding: 0;
+  padding: 4vw;
 
   @include media-breakpoint-up(sm) {
     flex: 0 0 50%;
@@ -31,7 +27,10 @@
   }
 }
 
-.expl-block__col--maps {
+.expl-block__col__maps {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* Title
