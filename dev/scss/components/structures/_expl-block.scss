@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Explanation Block
+   ========================================================================== */
+
+/* General
+   ========================================================================== */
+.expl-block {
+  position: relative;
+
+  @include media-breakpoint-up(sm) {
+    display: flex;
+  }
+}
+
+/* Column
+   ========================================================================== */
+.expl-block__col {
+  // display: flex;
+  // flex-flow: column;
+  height: 100vh;
+  // justify-content: center;
+  // align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  @include media-breakpoint-up(sm) {
+    flex: 0 0 50%;
+
+    width: 50%;
+  }
+}
+
+.expl-block__col--maps {
+}
+
+/* Title
+   ========================================================================== */
+.expl-block__title {
+  margin: 10vw 0;
+  line-height: 1.3;
+
+  @include fluid-type(25rem, 80rem, 2rem, 3rem);
+
+  @include media-breakpoint-up(sm) {
+    margin: 5vw 0;
+  }
+}

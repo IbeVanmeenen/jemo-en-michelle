@@ -1,3 +1,3 @@
-import component from './components/component';
+import maps from './components/maps';
 
-component('jemo-en-michelle');
+maps();

@@ -1,3 +1,8 @@
-@import "scaffolding",
-        "typography",
-        "colors";
+/* ==========================================================================
+   Config
+
+   This file is exclusively intended for setting up imports
+   Never add styles directly to this file
+   ========================================================================== */
+
+@import "scaffolding", "typography", "colors";

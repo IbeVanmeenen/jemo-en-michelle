@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Main Header
+   ========================================================================== */
+
+/* General
+   ========================================================================== */
+.main-header {
+  width: 100vw;
+  height: 100vw;
+  max-height: 100vh;
+  padding: rem-calc(100) 0 0 0;
+
+  overflow: hidden;
+
+  background: #c0fcff;
+  background: linear-gradient(180deg, #ffffff, #55c6ff);
+
+  @include media-breakpoint-up(md) {
+    height: 100vh;
+    padding: 20vh 0 0 0;
+  }
+}
+
+/* Title
+   ========================================================================== */
+.main-header__title {
+  z-index: 4;
+  position: absolute;
+  top: 10vw;
+  left: 10vw;
+
+  color: $white;
+
+  display: block;
+  margin: 0;
+
+  @include media-breakpoint-up(md) {
+    top: 4vw;
+    left: 4vw;
+  }
+}
+
+.main-header__title__text {
+  display: none;
+}
+
+.main-header__title__logo {
+  display: block;
+  width: 80%;
+
+  @include media-breakpoint-up(md) {
+    width: 60%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 50%;
+  }
+}

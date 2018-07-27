@@ -1,8 +1,18 @@
-@import "blocks/buttons",
-        "blocks/img",
-        "blocks/hr",
-        "blocks/lists";
+/* ==========================================================================
+   Components
 
-// @import "structures/...";
+   Never add styles directly to this file - set up imports
+   ========================================================================== */
 
-// @import "main/...";
+/* Blocks
+   ========================================================================== */
+@import "blocks/line-word";
+
+/* Structures
+   ========================================================================== */
+@import "structures/waves", "structures/steps-list", "structures/expl-block", "structures/code-block",
+  "structures/stone";
+
+/* Main
+   ========================================================================== */
+@import "main/main-header", "main/main-content";

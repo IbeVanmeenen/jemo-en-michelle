@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Main Content
+   ========================================================================== */
+
+/* General
+   ========================================================================== */
+.main-content {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.1;
+    background: url("/assets/img/background/bubbles.svg") top left repeat;
+
+    transform: translate3d(0, 0, 0);
+  }
+}

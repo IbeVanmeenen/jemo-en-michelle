@@ -4,42 +4,98 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="jemo-en-michelle">
+    <meta name="description" content="Jemo en Michelle gaan trouwen">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Lobster+Two:700">
     <link rel="stylesheet" href="./assets/css/style.min.css">
 
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <meta name="application-name" content="Jemo en Michelle gaan trouwen">
 
-    <meta name="msapplication-TileColor" content="#030306">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <script src="https://maps.googleapis.com/maps/api/js?key=212"></script>
 
-    <meta name="application-name" content="jemo-en-michelle">
-    <meta name="description" content="">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:title" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image:src" content="">
-
-    <title>jemo-en-michelle</title>
+    <title>Jemo en Michelle gaan trouwen</title>
 </head>
 <body>
-    <main role="main"></main>
+    <header class="main-header">
+        <h1 class="main-header__title">
+          <span class="main-header__title__text">Finding Money</span>
+          <img src="./assets/img/logo.svg" alt="Finding Money" class="main-header__title__logo">
+        </h1>
+        <figure class="main-header__waves waves">
+            <img src="./assets/img/header/waves-1.png" class="waves__el waves__el--wave-1" alt="">
+            <img src="./assets/img/header/waves-2.png" class="waves__el waves__el--wave-2" alt="">
+            <img src="./assets/img/header/ship.png" class="waves__el waves__el--ship" alt="">
+            <img src="./assets/img/header/waves-3.png" class="waves__el waves__el--wave-3" alt="">
+            <figcaption class="waves__cap">
+                Animatie: Golven gaan wild tekeer terwijl een boot op een stokje heen en weer schudt.
+            </figcaption>
+        </figure>
+    </header>
+
+    <main role="main" class="main-content">
+        <section class="expl-block">
+            <figure id="gmap-container" class="expl-block__col expl-block__col--maps">
+                <!-- <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.be/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=KSA+'t+Vlinderke,+Ellestraat+25,+8550+Zwevegem&amp;aq=&amp;sll=50.809135,3.342204&amp;sspn=0.003953,0.009087&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=KSA+'t+Vlinderke,+Ellestraat+25,+Zwevegem+8550+Zwevegem,+West-Vlaanderen,+Vlaams+Gewest&amp;ll=50.81548,3.334007&amp;spn=0.01898,0.008583&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe> -->
+            </figure>
+            <div class="expl-block__col">
+                <header>
+                    <h2 class="expl-block__title">
+                        Aargh, <span class="line-word line-word--blue">wat</span> is de bedoeling?
+                    </h2>
+                </header>
+                <ol class="steps-list">
+                    <li class="steps-list__item">
+                        <img src="./assets/img/icons/pc.png" class="steps-list__item__fig">
+                        <p class="steps-list__item__txt">Voer jullie eerste code in op deze website <br> (scroll naar beneden)</p>
+                    </li>
+                    <li class="steps-list__item">
+                        <img src="./assets/img/icons/find.png" class="steps-list__item__fig">
+                        <p class="steps-list__item__txt">Met de nieuwe tip zoeken jullie een nieuwe code</p>
+                    </li>
+                    <li class="steps-list__item">
+                        <img src="./assets/img/icons/map.png" class="steps-list__item__fig">
+                        <p class="steps-list__item__txt">Herhaal dit tot jullie alle stukjes van de kaart hebben verzameld!</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="code-block">
+            <figure class="stone" id="stone">
+                <img src="./assets/img/stone/stone--no-head.jpg" class="stone__bg">
+                <figure class="stone__head">
+                    <img src="./assets/img/stone/head.png" class="stone__head__head">
+                    <img src="./assets/img/stone/eyes--correct.png" class="stone__eye stone__eye--correct">
+                    <img src="./assets/img/stone/eyes--wrong.png" class="stone__eye stone__eye--wrong">
+                </figure>
+
+                <figcaption class="stone__content">
+                    <div class="stone__code">
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="A">A</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="B">B</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="C">C</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="D">D</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="I">I</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="J">J</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="L">L</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="N">N</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="P">P</button>
+
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="0">0</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="3">3</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="8">8</button>
+                        <button type="button" class="js-code-btn stone__code__btn" data-code="9">9</button>
+                    </div>
+                    <div class="stone__result" id="stone-directions">
+                    </div>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <audio src="./assets/sound/click.mp3" preload="auto" id="sound--click" class="audio-file"></audio>
+    <audio src="./assets/sound/fail.mp3" preload="auto" id="sound--fail" class="audio-file"></audio>
+    <audio src="./assets/sound/success.mp3" preload="auto" id="sound--success" class="audio-file"></audio>
 
     <script src="./assets/js/vendors.min.js"></script>
     <script src="./assets/js/app.min.js"></script>
