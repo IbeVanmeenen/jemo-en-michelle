@@ -1,0 +1,32 @@
+{
+	"root": {
+		"npm": "./",
+		"dev": "./dev",
+		"dist": "./dist"
+	},
+	"javascript": {
+		"dev": "js",
+		"dist": "assets/js",
+		"extensions": [".json", ".js"]
+	},
+	"styles": {
+		"dev": "scss/**/*",
+		"dist": "assets/css",
+		"extensions": ".scss"
+	},
+	"images": {
+		"dev": "img/**/*",
+		"dist": "assets/img",
+		"extensions": ".{jpg,png,svg,gif}"
+	},
+	"video": {
+		"dev": "video/**/*",
+		"dist": "assets/video",
+		"extensions": ".{mp4,webm}"
+	},
+	"html": {
+		"dev": "html/**/*",
+		"dist": "./",
+		"extensions": ".html"
+	}
+}
