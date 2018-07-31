@@ -66,11 +66,11 @@ const positions = [
 // Setup
 const setup = gmapContainer => {
   const map = new google.maps.Map(gmapContainer, {
-    zoom: 10,
+    zoom: 8,
     styles: mapStyle
   });
 
-  const bounds = new google.maps.LatLngBounds();
+  // const bounds = new google.maps.LatLngBounds();
 
   for (const position of positions) {
     const marker = new google.maps.Marker({
@@ -81,10 +81,12 @@ const setup = gmapContainer => {
       map: map
     });
 
-    bounds.extend(marker.position);
+    // bounds.extend(marker.position);
+    const latLng = marker.getPosition();
+    map.setCenter(latLng);
   }
 
-  map.fitBounds(bounds);
+  // map.fitBounds(bounds);
 };
 
 const maps = _ => {
