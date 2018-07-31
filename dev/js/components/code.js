@@ -11,7 +11,7 @@ const keyCode = '15409';
 const setMessage = msg => {
   let message = '';
 
-  directions.innerHTML = '';
+  directions.innerHTML = msg;
 };
 
 const checkCode = () => {
