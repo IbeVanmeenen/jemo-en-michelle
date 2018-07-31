@@ -5,20 +5,26 @@ let givenCode = '';
 let stone;
 let directions;
 
-const correctCode = '1988488770989422705199103637254';
+const nemoCode = '37254';
+const keyCode = '15409';
 
-const setMessage = () => {
+const setMessage = msg => {
   let message = '';
 
-  directions.innerHTML = 'Ga naar WhatsApp en geef daar de code "JEMO_IS_EEN_SCHAAP" door in de Familia de mama groep';
+  directions.innerHTML = '';
 };
 
 const checkCode = () => {
-  if (correctCode === givenCode) {
+  if (nemoCode === givenCode) {
     playSuccess();
     stone.classList.add('stone--success');
-
-    setMessage();
+    setMessage(
+      'The end is the beginning. K sp adkjj kr dzqeyzd. Rq yqt, gud zqjg. Wqpu srt auu vujqc. Gebruik limonade.'
+    );
+  } else if (keyCode === givenCode) {
+    playSuccess();
+    stone.classList.add('stone--success');
+    setMessage('50.815667, 3.327250');
   } else {
     givenCode = '';
 
@@ -31,7 +37,7 @@ const checkCode = () => {
 };
 
 const checkCodeLenght = () => {
-  if (givenCode.length === 31) {
+  if (givenCode.length === 5) {
     checkCode();
   }
 };
